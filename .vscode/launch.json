@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ProfesseurRepository",
+            "request": "launch",
+            "mainClass": "Repository.ProfesseurRepository",
+            "projectName": "GHC3_df6b1486"
+        },
+        {
+            "type": "java",
+            "name": "DataBase",
+            "request": "launch",
+            "mainClass": "com.wiki.mg.DataBase",
+            "projectName": "GHC3_df6b1486"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.wiki.mg.Main",
+            "vmArgs": "--module-path /media/fetra/_Data/Projet/Java/GHC3/lib/javafx-sdk-18.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "projectName": "GHC3_df6b1486"
+        }
+    ]
+}

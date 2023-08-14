@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginMain" maxHeight="437.0" maxWidth="857.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="857.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+    <children>
+        <AnchorPane layoutX="501.0" layoutY="43.0" prefHeight="347.0" prefWidth="304.0" style="-fx-background-color: #9C2B27;">
+            <children>
+                <Label layoutX="34.0" layoutY="100.0" prefHeight="17.0" prefWidth="144.0" text="Nom d'utilisateur/e-mail" textFill="WHITE" />
+                <TextField layoutX="34.0" layoutY="117.0" prefHeight="25.0" prefWidth="236.0" />
+                <Label layoutX="34.0" layoutY="152.0" prefHeight="17.0" prefWidth="144.0" text="Mot de passe" textFill="WHITE" />
+                <PasswordField layoutX="35.0" layoutY="169.0" prefHeight="25.0" prefWidth="236.0" />
+                <Button layoutX="34.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #E45652;" text="Se connecter" textFill="WHITE" />
+                <Label layoutX="106.0" layoutY="41.0" text="Connexion" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="437.0" fitWidth="450.0" layoutX="-1.0" layoutY="-2.0" opacity="0.41" pickOnBounds="true">
+            <image>
+                <Image url="@../image/walls.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="14.0" layoutY="109.0" prefHeight="48.0" prefWidth="435.0" text="Gestion des Heures Complémentaire" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="69.0" layoutY="200.0" prefHeight="17.0" prefWidth="289.0" text="Application simple, robuste et fiable pour vos besoins." textFill="WHITE" />
+        <Label layoutX="14.0" layoutY="406.0" text="Wiki corporation ©2022" textFill="WHITE" />
+        <Label layoutX="815.0" prefHeight="48.0" prefWidth="28.0" text="X" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <AnchorPane maxHeight="437.0" maxWidth="857.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="857.0" style="-fx-background-color: #20120F;">
+            <children>
+                <AnchorPane layoutX="501.0" layoutY="43.0" prefHeight="347.0" prefWidth="304.0" style="-fx-background-color: #9C2B27;">
+                    <children>
+                        <Label layoutX="34.0" layoutY="100.0" prefHeight="17.0" prefWidth="144.0" text="Nom d'utilisateur/e-mail" textFill="WHITE" />
+                        <TextField fx:id="input_username" layoutX="34.0" layoutY="117.0" prefHeight="25.0" prefWidth="236.0" promptText="abcdef@xyz.ghi" />
+                        <Label layoutX="34.0" layoutY="152.0" prefHeight="17.0" prefWidth="144.0" text="Mot de passe" textFill="WHITE" />
+                        <PasswordField fx:id="input_password" layoutX="35.0" layoutY="169.0" prefHeight="25.0" prefWidth="236.0" />
+                        <Button fx:id="btn_connexion" layoutX="34.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#signin" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #E45652;" text="Se connecter" textFill="WHITE" />
+                        <Label layoutX="106.0" layoutY="41.0" text="Connexion" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="437.0" fitWidth="450.0" layoutX="-1.0" layoutY="-2.0" opacity="0.41" pickOnBounds="true">
+                    <image>
+                        <Image url="@../image/walls.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="109.0" prefHeight="48.0" prefWidth="435.0" text="Gestion des Heures Complémentaire" textFill="WHITE">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="69.0" layoutY="200.0" prefHeight="17.0" prefWidth="289.0" text="Application simple, robuste et fiable pour vos besoins." textFill="WHITE" />
+                <Label layoutX="14.0" layoutY="406.0" text="Wiki corporation ©2022" textFill="WHITE" />
+                <Label fx:id="close" layoutX="815.0" onMouseClicked="#hanldleClose" prefHeight="48.0" prefWidth="28.0" text="X" textFill="WHITE">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

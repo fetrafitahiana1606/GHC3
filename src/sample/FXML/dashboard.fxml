@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="522.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashboardController">
+    <children>
+
+        <VBox prefHeight="522.0" prefWidth="206.0" style="-fx-background-color: #9C2B27;">
+            <children>
+                <Pane prefHeight="109.0" prefWidth="206.0">
+                    <children>
+                        <Label layoutX="54.0" layoutY="20.0" prefHeight="55.0" prefWidth="99.0" text="GHCE">
+                            <font>
+                                <Font name="Kristen ITC" size="30.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button fx:id="btn_matiere" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#btn_matiere_clicked" prefHeight="55.0" prefWidth="206.0" style="-fx-background-color: #E45652;" text="Matière" textFill="WHITE" />
+                <Button fx:id="btn_volumehoraire" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#btn_volumehoraire_clicked" prefHeight="60.0" prefWidth="206.0" style="-fx-background-color: #E45652;" text="Volume Horaire" textFill="WHITE" />
+                <Button fx:id="btn_professeur" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#btn_professeur_clicked" prefHeight="55.0" prefWidth="206.0" style="-fx-background-color: #E45652;" text="Professeur" textFill="WHITE" />
+                <Button fx:id="btn_bulletin" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#btn_bulletin_clicked" prefHeight="63.0" prefWidth="206.0" style="-fx-background-color: #E45652;" text="Bulletin de paie" textFill="WHITE" />
+            <Button fx:id="btn_heureComp" layoutX="10.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#btn_HeureComp_clicked" prefHeight="63.0" prefWidth="206.0" style="-fx-background-color: #E45652;" text="H.Complémentaires" textFill="WHITE" />
+            </children>
+        </VBox>
+        <Pane fx:id="modifiable" layoutX="206.0" prefHeight="522.0" prefWidth="623.0">
+         <children>
+            <Pane layoutX="2.0" layoutY="1.0" prefHeight="522.0" prefWidth="623.0" style="-fx-background-color: light-gary;">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="507.0" layoutY="365.0" radius="253.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #E45652;" />
+                  <Label layoutX="32.0" layoutY="238.0" prefHeight="47.0" prefWidth="529.0" text="Gestion des Heures Complémentaires">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+    </children>
+</AnchorPane>

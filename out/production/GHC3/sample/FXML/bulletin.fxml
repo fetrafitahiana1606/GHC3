@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BulletinController">
+    <children>
+        <Pane layoutX="10.0" layoutY="7.0" prefHeight="109.0" prefWidth="603.0" style="-fx-background-color: #E45652;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label prefHeight="109.0" prefWidth="603.0" text="Bulletin de paie">
+                    <font>
+                        <Font size="53.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <HBox layoutX="11.0" layoutY="130.0" prefHeight="25.0" prefWidth="603.0">
+            <children>
+                <TextField id="input_matricule" fx:id="input_matricule" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="130.0" prefHeight="25.0" prefWidth="216.0" promptText="Matricule" />
+                <TextField id="input_tauxhoraire" fx:id="input_annee" alignment="CENTER_RIGHT" layoutX="57.0" layoutY="150.0" prefHeight="25.0" prefWidth="220.0" promptText="Année" />
+              <Button fx:id="btn_show" mnemonicParsing="false" onMouseClicked="#showBulletin" style="-fx-background-color: #88d3c8;" text="Afficher" />
+              <Button id="btn_update" fx:id="btn_print" mnemonicParsing="false" style="-fx-background-color: #5aff4b;" text="imprimer" />
+            </children>
+        </HBox>
+        <GridPane layoutX="10.0" layoutY="200.0" prefHeight="247.0" prefWidth="603.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="401.0" minHeight="10.0" prefHeight="256.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="167.0" minHeight="0.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TableView fx:id="table_bulletin" prefHeight="213.0" prefWidth="603.0">
+                    <columns>
+                        <TableColumn id="cell_designation" fx:id="cell_designation" prefWidth="189.0" text="DESIGNATION" />
+                        <TableColumn id="cell_nbheure" fx:id="cell_nbheure" prefWidth="226.0" text="NBHEURS" />
+                        <TableColumn id="cell_montant" fx:id="cell_montant" prefWidth="187.0" text="MONTANT" />
+                    </columns>
+                </TableView>
+                <HBox GridPane.rowIndex="1">
+               <children>
+                  <HBox prefHeight="19.0" prefWidth="603.0">
+                     <children>
+                        <Label fx:id="label_total" prefHeight="27.0" prefWidth="57.0" text="Total">
+                           <HBox.margin>
+                              <Insets left="375.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="input_montant" alignment="CENTER_RIGHT" editable="false" prefHeight="25.0" prefWidth="159.0" />
+                        <Label prefHeight="27.0" prefWidth="33.0" text="AR">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+                </HBox>
+            </children>
+        </GridPane>
+      <HBox layoutX="182.0" layoutY="165.0" prefHeight="27.0" prefWidth="216.0">
+         <children>
+            <TextField fx:id="input_nom" alignment="CENTER_RIGHT" editable="false" prefHeight="25.0" prefWidth="220.0" promptText="Nom" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
